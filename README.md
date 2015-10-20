@@ -4,8 +4,7 @@ angularJS HTML generator directive
 
 using json to generate html
 
-example:
-
+example: js file
 <pre>
 angular.module("app").controller("ViewController", 
 	/*@ngInject*/ function($scope) {
@@ -62,7 +61,7 @@ angular.module("app").controller("ViewController",
 												class: 'control-label col-xs-4',
 											},
 											tag: 'label',
-											innerHtml: 'Labelnya'
+											innerHtml: 'Label Text'
 										},
 										{
 											attr: {
@@ -91,7 +90,7 @@ angular.module("app").controller("ViewController",
 												class: 'control-label col-xs-4',
 											},
 											tag: 'label',
-											innerHtml: 'Labelnya'
+											innerHtml: 'Label Text'
 										},
 										{
 											attr: {
@@ -117,10 +116,11 @@ angular.module("app").controller("ViewController",
 		};
 	}
 );
+</pre>
 
+html file
+<pre>
 &lt;body ng-controller="ViewController as viewCtrl"&gt;
   &lt;html-generator config="viewCtrl.config"&gt;&lt;/html-generator&gt;
 &lt;/body&gt;
-
-
 </pre>
